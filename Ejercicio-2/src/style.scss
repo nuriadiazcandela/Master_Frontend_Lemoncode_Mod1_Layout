@@ -1,0 +1,42 @@
+@import 'primary.scss';
+// @import 'secondary.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  .box {
+    width: 150px;
+    height: 90px;
+    border: 1px solid grey;
+    border-radius: $borderRadius;
+    margin-bottom: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $primaryFont;
+  }
+}
+
+.base {
+  background-color: $baseColor;
+}
+.important {
+  background-color: $importantColor;
+}
+.warning {
+  background-color: $warningColor;
+}
+.box.font {
+  border: none;
+  text-align: left;
+  .secondary_font {
+    font-family: $secondaryFont;
+    padding-top: 10px;
+  }
+}
+.shadow {
+  box-shadow: $boxShadow;
+}

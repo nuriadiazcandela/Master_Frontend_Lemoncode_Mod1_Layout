@@ -1,7 +1,4 @@
 {
-  "dependencies": {
-    "parcel": "^2.0.0-rc.0"
-  },
   "devDependencies": {
     "sass": "^1.42.1"
   }
