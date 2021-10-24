@@ -1,20 +1,29 @@
-.container-1 {
+.container-1,
+.container-2,
+.container-3 {
   display: flex;
-  justify-content: space-between;
-  width: 750px;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px 0;
 }
-.container-1 .box {
+.container-1 .box,
+.container-2 .box,
+.container-3 .box {
   width: 70px;
   height: 70px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 5px;
 }
-.container-1 .box .color-box-text {
+.container-1 .box .color-box-text,
+.container-2 .box .color-box-text,
+.container-3 .box .color-box-text {
   align-items: center;
   text-align: center;
 }
+
 .container-1 .base-color {
   background-color: red;
   color: white;
@@ -50,6 +59,82 @@
 }
 .container-1 .lighten-4 {
   background-color: #ffcccc;
+  color: #999999;
+}
+
+.container-2 .base-color {
+  background-color: blue;
+  color: white;
+  width: 90px;
+}
+.container-2 .darken-1 {
+  background-color: #0000cc;
+  color: white;
+}
+.container-2 .darken-2 {
+  background-color: #000099;
+  color: white;
+}
+.container-2 .darken-3 {
+  background-color: #000066;
+  color: white;
+}
+.container-2 .darken-4 {
+  background-color: #000033;
+  color: white;
+}
+.container-2 .lighten-1 {
+  background-color: #3333ff;
+  color: #e6e6e6;
+}
+.container-2 .lighten-2 {
+  background-color: #6666ff;
+  color: #cccccc;
+}
+.container-2 .lighten-3 {
+  background-color: #9999ff;
+  color: #b3b3b3;
+}
+.container-2 .lighten-4 {
+  background-color: #ccccff;
+  color: #999999;
+}
+
+.container-3 .base-color {
+  background-color: purple;
+  color: white;
+  width: 90px;
+}
+.container-3 .darken-1 {
+  background-color: #4d004d;
+  color: white;
+}
+.container-3 .darken-2 {
+  background-color: #1a001a;
+  color: white;
+}
+.container-3 .darken-3 {
+  background-color: black;
+  color: white;
+}
+.container-3 .darken-4 {
+  background-color: black;
+  color: white;
+}
+.container-3 .lighten-1 {
+  background-color: #b300b3;
+  color: #e6e6e6;
+}
+.container-3 .lighten-2 {
+  background-color: #e600e6;
+  color: #cccccc;
+}
+.container-3 .lighten-3 {
+  background-color: #ff1aff;
+  color: #b3b3b3;
+}
+.container-3 .lighten-4 {
+  background-color: #ff4dff;
   color: #999999;
 }
 

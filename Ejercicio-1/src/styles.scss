@@ -1,10 +1,15 @@
-$color-base: red;
+$color-base1: red;
 $color-text: white;
+$color-base2: blue;
+$color-base3: purple;
 
-.container-1 {
+.container-1,
+.container-2,
+.container-3 {
   display: flex;
-  justify-content: space-between;
-  width: 750px;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px 0;
   .box {
     width: 70px;
     height: 70px;
@@ -12,25 +17,66 @@ $color-text: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 5px;
     .color-box-text {
       align-items: center;
       text-align: center;
     }
   }
+}
+.container-1 {
   .base-color {
-    background-color: $color-base;
+    background-color: $color-base1;
     color: $color-text;
     width: 90px;
   }
   @for $box from 1 through 4 {
     .darken-#{$box} {
-      background-color: darken($color-base, 10% * $box);
+      background-color: darken($color-base1, 10% * $box);
       color: lighten($color-text, 10% * $box);
     }
   }
   @for $box from 1 through 4 {
     .lighten-#{$box} {
-      background-color: lighten($color-base, 10% * $box);
+      background-color: lighten($color-base1, 10% * $box);
+      color: darken($color-text, 10% * $box);
+    }
+  }
+}
+.container-2 {
+  .base-color {
+    background-color: $color-base2;
+    color: $color-text;
+    width: 90px;
+  }
+  @for $box from 1 through 4 {
+    .darken-#{$box} {
+      background-color: darken($color-base2, 10% * $box);
+      color: lighten($color-text, 10% * $box);
+    }
+  }
+  @for $box from 1 through 4 {
+    .lighten-#{$box} {
+      background-color: lighten($color-base2, 10% * $box);
+      color: darken($color-text, 10% * $box);
+    }
+  }
+}
+.container-3 {
+  .base-color {
+    background-color: $color-base3;
+    color: $color-text;
+    width: 90px;
+  }
+  @for $box from 1 through 4 {
+    .darken-#{$box} {
+      background-color: darken($color-base3, 10% * $box);
+      color: lighten($color-text, 10% * $box);
+    }
+  }
+  @for $box from 1 through 4 {
+    .lighten-#{$box} {
+      background-color: lighten($color-base3, 10% * $box);
       color: darken($color-text, 10% * $box);
     }
   }
